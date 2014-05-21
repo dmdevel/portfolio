@@ -1,0 +1,33 @@
+// FONT WEIGHT DEFINITIONS
+// ------------------------------------------------------------
+
+@font-thin: 200;
+@font-light: 300;
+@font-regular: 400;
+@font-semibold: 500;
+@font-bold: 600;
+@font-extrabold: 700;
+@font-black: 800;
+
+// FONT DECLARATIONS
+// ------------------------------------------------------------
+
+.loadFont(@Family, @Filename:'@{Family}', @Weight:normal){
+  font-family: '@{Family}';
+  src: url('@{fontsDir}/@{Filename}.eot');
+  src: url('@{fontsDir}/@{Filename}.eot?#iefix') format('embedded-opentype'),
+  url('@{fontsDir}/@{Filename}.woff') format('woff'),
+  url('@{fontsDir}/@{Filename}.ttf') format('truetype'),
+  url('@{fontsDir}/@{Filename}.svg#@{Family}') format('svg');
+  font-weight: @Weight;
+  font-style: normal;
+}
+
+@font-face{.loadFont('Proxima Nova','proximanova-thin', @font-thin);}
+@font-face{.loadFont('Proxima Nova','proximanova-light', @font-light);}
+@font-face{.loadFont('Proxima Nova','proximanova-regular', @font-regular);}
+@font-face{.loadFont('Proxima Nova','proximanova-semibold', @font-semibold);}
+@font-face{.loadFont('Proxima Nova','proximanova-bold', @font-bold);}
+@font-face{.loadFont('Proxima Nova','proximanova-extrabold', @font-extrabold);}
+@font-face{.loadFont('Proxima Nova','proximanova-black', @font-black);}
+@font-face{.loadFont('Ainslie','ainslie-extbook');}

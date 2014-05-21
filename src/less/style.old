@@ -1,0 +1,25 @@
+// Path definitions
+// ------------------------------------------------------------
+@libDir: "lib";
+@importsDir: "imports";
+@layoutsDir: "responsive_layouts";
+@fontsDir: "../fonts";
+
+
+// External library imports
+// ------------------------------------------------------------
+@import "@{libDir}/_reset";
+@import "@{libDir}/_lesshat";
+@import "@{libDir}/_grid";
+
+
+// Personal imports
+// ------------------------------------------------------------
+@import "@{importsDir}/_variables";
+@import "@{importsDir}/_mixins";
+@import "@{importsDir}/_fonts";
+
+
+// Kickstart this shit
+// ------------------------------------------------------------
+@import "layout";
