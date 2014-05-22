@@ -1,3 +1,8 @@
+// TODO
+// ------------------------------------------------------------
+// - Rework the breakponts to be content-specific as opposed to device-specific
+//
+
 // GENERIC STYLES
 // ------------------------------------------------------------
 
@@ -25,23 +30,29 @@ a, a:hover {
 
 .hero{
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 2rem;
   overflow: hidden;
   img{
-    margin: 3rem auto;
+    margin: 1.5rem auto;
   }
   h1{
-    font-weight: @font-thin;
-    font-size: 4.5rem;
+    font-weight: @font-light;
+    font-size: 2.7rem;
+    line-height: 1.3em;
+    strong{
+      font-size: 1.3em;
+    }
   }
   h2{
-    font-weight: @font-thin;
-    font-size: 2.5rem;
+    font-weight: @font-light;
+    font-size: 1.5rem;
+    line-height: 1.3em;
   }
   strong{
     font-weight: @font-bold;
   }
 }
+
 
 article.landing{
   height: 1080px;
@@ -82,7 +93,7 @@ article.landing{
 
 article.mobileusers{
   .clearfix();
-  max-width: 80%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   .traits{
@@ -101,7 +112,7 @@ article.mobileusers{
         }
       }
       h1{
-        font-weight: @font-thin;
+        font-weight: @font-light;
         font-size: 2rem;
         line-height: 1.5em;
         strong{
@@ -120,29 +131,10 @@ article.mobileusers{
   }
 }
 
-.hero{
-  text-align: center;
-  padding-top: 5rem;
-  overflow: hidden;
-  img{
-    margin: 3rem auto;
-  }
-  h1{
-    font-weight: @font-thin;
-    font-size: 4.5rem;
-  }
-  h2{
-    font-weight: @font-thin;
-    font-size: 2.5rem;
-  }
-  strong{
-    font-weight: @font-bold;
-  }
-}
-
 
 // PATH DEFINITIONS
 // ------------------------------------------------------------
+
 @libDir: "lib";
 @importsDir: "imports";
 @layoutsDir: "responsive_layouts";
@@ -151,6 +143,7 @@ article.mobileusers{
 
 // EXTERNAL LIBRARY IMPORTS
 // ------------------------------------------------------------
+
 @import "@{libDir}/_reset";
 @import "@{libDir}/_lesshat";
 @import "@{libDir}/_grid";
@@ -158,6 +151,7 @@ article.mobileusers{
 
 // PERSONAL IMPORTS
 // ------------------------------------------------------------
+
 @import "@{importsDir}/_variables";
 @import "@{importsDir}/_mixins";
 @import "@{importsDir}/_fonts";
@@ -166,14 +160,15 @@ article.mobileusers{
 // RESPONSIVE STYLE IMPORTS
 // ------------------------------------------------------------
 
-@import "@{layoutsDir}/_small";
-@import "@{layoutsDir}/_medium";
-@import "@{layoutsDir}/_large";
-@import "@{layoutsDir}/_extralarge";
+@import "@{layoutsDir}/_400";
+@import "@{layoutsDir}/_768";
+@import "@{layoutsDir}/_1024";
+@import "@{layoutsDir}/_1200";
 
 
 // ELEMENT HIDING (FOR EASIER LAYOUT DESIGNING)
 // ------------------------------------------------------------
+
 .landing, .quote, .feel, .path, footer{
   display:none;
 }

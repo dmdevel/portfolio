@@ -2,14 +2,6 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "16877",
 "files": {
-	"\/public\/css\/init.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/css\/init.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
 	"\/public\/css\/style.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -106,6 +98,56 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/public\/js\/lib\/jquery.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/js\/lib\/jquery.js",
+		"outputAbbreviatedPath": "\/public\/js\/lib\/min\/jquery-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/public\/js\/lib\/main.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/js\/lib\/main.js",
+		"outputAbbreviatedPath": "\/public\/js\/lib\/min\/main-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/public\/js\/lib\/min\/main-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/js\/lib\/min\/main-ck.js",
+		"outputAbbreviatedPath": "\/public\/js\/lib\/min\/min\/main-ck-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/public\/js\/main.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/js\/main.js",
+		"outputAbbreviatedPath": "\/public\/js\/min\/main-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/public\/js\/min\/main-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/js\/min\/main-ck.js",
+		"outputAbbreviatedPath": "\/public\/js\/min\/min\/main-ck-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/README.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
@@ -117,16 +159,16 @@
 		"outputAbbreviatedPath": "\/README.html",
 		"outputPathIsSetByUser": 0
 		},
-	"\/src\/less\/init.less": {
+	"\/src\/less\/responsive_layouts\/_1024.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/less\/init.less",
-		"outputAbbreviatedPath": "\/public\/css\/init.css",
+		"inputAbbreviatedPath": "\/src\/less\/responsive_layouts\/_1024.less",
+		"outputAbbreviatedPath": "\/public\/css\/_1024.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
@@ -136,7 +178,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/src\/less\/layout.less": {
+	"\/src\/less\/responsive_layouts\/_1200.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -144,8 +186,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/less\/layout.less",
-		"outputAbbreviatedPath": "\/public\/css\/layout.css",
+		"inputAbbreviatedPath": "\/src\/less\/responsive_layouts\/_1200.less",
+		"outputAbbreviatedPath": "\/public\/css\/_1200.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
@@ -155,7 +197,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/src\/less\/responsive_layouts\/_extralarge.less": {
+	"\/src\/less\/responsive_layouts\/_400.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -163,8 +205,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/less\/responsive_layouts\/_extralarge.less",
-		"outputAbbreviatedPath": "\/public\/css\/_extralarge.css",
+		"inputAbbreviatedPath": "\/src\/less\/responsive_layouts\/_400.less",
+		"outputAbbreviatedPath": "\/public\/css\/_400.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
@@ -174,7 +216,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/src\/less\/responsive_layouts\/_large.less": {
+	"\/src\/less\/responsive_layouts\/_768.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -182,46 +224,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/less\/responsive_layouts\/_large.less",
-		"outputAbbreviatedPath": "\/public\/css\/_large.css",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/src\/less\/responsive_layouts\/_medium.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/less\/responsive_layouts\/_medium.less",
-		"outputAbbreviatedPath": "\/public\/css\/_medium.css",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/src\/less\/responsive_layouts\/_small.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/less\/responsive_layouts\/_small.less",
-		"outputAbbreviatedPath": "\/public\/css\/_small.css",
+		"inputAbbreviatedPath": "\/src\/less\/responsive_layouts\/_768.less",
+		"outputAbbreviatedPath": "\/public\/css\/_768.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
@@ -375,8 +379,8 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/localhost:8888",
-	"externalServerPreviewPathAddition": "",
+	"externalServerAddress": "http:\/\/localhost:5757\/",
+	"externalServerPreviewPathAddition": "index.html\\#control",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp, less",
 	"hamlAutoOutputPathRelativePath": "",
 	"hamlAutoOutputPathReplace1": "",
@@ -403,7 +407,7 @@
 	"javascriptOutputStyle": 1,
 	"javascriptOutputSuffix": "-ck",
 	"javascriptSyntaxCheckerStyle": 1,
-	"jsCheckerReservedNamesString": "",
+	"jsCheckerReservedNamesString": "console",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
@@ -716,7 +720,7 @@
 			"flagValue": -1
 			},
 		"devel": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"eqeq": {

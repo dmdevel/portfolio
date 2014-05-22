@@ -24,19 +24,24 @@ a:hover {
 }
 .hero {
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 2rem;
   overflow: hidden;
 }
 .hero img {
-  margin: 3rem auto;
+  margin: 1.5rem auto;
 }
 .hero h1 {
-  font-weight: 200;
-  font-size: 4.5rem;
+  font-weight: 300;
+  font-size: 2.7rem;
+  line-height: 1.3em;
+}
+.hero h1 strong {
+  font-size: 1.3em;
 }
 .hero h2 {
-  font-weight: 200;
-  font-size: 2.5rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.3em;
 }
 .hero strong {
   font-weight: 600;
@@ -92,7 +97,7 @@ article.landing .button {
 }
 article.mobileusers {
   *zoom: 1;
-  max-width: 80%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -124,7 +129,7 @@ article.mobileusers .traits .trait img:after {
   background-color: #c5c5c7;
 }
 article.mobileusers .traits .trait h1 {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 2rem;
   line-height: 1.5em;
 }
@@ -138,25 +143,6 @@ article.mobileusers .traits .trait p {
   padding-top: .5em;
   border-top: 2px solid #d6d6d6;
   color: #595959;
-}
-.hero {
-  text-align: center;
-  padding-top: 5rem;
-  overflow: hidden;
-}
-.hero img {
-  margin: 3rem auto;
-}
-.hero h1 {
-  font-weight: 200;
-  font-size: 4.5rem;
-}
-.hero h2 {
-  font-weight: 200;
-  font-size: 2.5rem;
-}
-.hero strong {
-  font-weight: 600;
 }
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
@@ -396,7 +382,29 @@ body:after {
   font-weight: normal;
   font-style: normal;
 }
+@media (min-width: 400px) {
+  article.mobileusers {
+    max-width: 80%;
+  }
+  .hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.2em;
+  }
+  .hero h1 strong {
+    font-size: 1.2em;
+  }
+  .hero h2 {
+    font-size: 2rem;
+    line-height: 1.2em;
+  }
+}
 @media (min-width: 768px) {
+  .hero h1 strong {
+    display: inline;
+  }
+  article.mobileusers {
+    max-width: 80%;
+  }
   article.mobileusers .traits .trait {
     display: inline;
     float: left;
